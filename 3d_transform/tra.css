@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color:darkseagreen ;
+    height: 500px;
+    width: 500px;
+    border: 3px solid lightblue;
+    display: flex;
+}
+
+.box{
+    margin: 10px;
+    background-color: slategray;
+    border: 3px solid teal;
+    height: 100px;
+    width:100px;
+    transition: all 2s ease-in 1s;
+}
+
+.box:hover{
+    transform: rotate(360deg) translateX(80px) translateY(80px);
+    background-color: royalblue;
+}

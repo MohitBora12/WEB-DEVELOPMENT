@@ -1,0 +1,12 @@
+.cardview{
+   box-shadow:0 6px 10px rgb(0,0,0,0.3) ;
+   margin: 10px;
+   padding: 20px;
+   box-sizing: border-box;
+   width: fit-content;
+}
+
+.cd{
+    margin: 5px;
+    padding: 3px;
+}

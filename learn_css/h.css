@@ -1,0 +1,28 @@
+.main{
+    height: 100px;
+    width: 200px;
+    background-image: radial-gradient(circle,red,blue,green) ;  
+}
+
+.k{
+    position: absolute;
+    left:160px;
+    top:05px;
+}
+
+.v{
+    position: relative;
+    top:20px;
+    left:80px;
+}
+
+.e{
+    position: relative;
+    top: 40px;
+}
+
+.a{
+    position: relative;
+    top: 20px;
+    left: 152px;
+}

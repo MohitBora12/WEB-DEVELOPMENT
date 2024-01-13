@@ -1,0 +1,25 @@
+#head1{
+    background-color: rosybrown;
+}
+#head2{
+    background-color: hotpink;
+}
+
+.lis{
+    color:chocolate;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#hee:hover{
+    color:palegreen;
+    margin: 10px;
+    background-color: rgb(255, 210, 105);
+}
+
+#tt{
+    animation: rotation 2s infinite linear;
+    background-color: darkred;
+}
+html{
+    background-color: lavender;
+}

@@ -1,0 +1,41 @@
+#ma{
+    height: 300px;
+    /* width: 400px; */
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: -3px -3px 3px palegreen,4px 4px 4px palevioletred;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#b1{
+    background-color:aqua;
+    /* width: 50px; */
+    border: 1px solid rebeccapurple;
+    order: 1;
+}
+
+#b2{
+    border: 1px solid rebeccapurple;
+    background-color: aqua;
+    /* width: 50px; */
+    order: 3;
+}
+#b3{
+    border: 1px solid rebeccapurple;
+    background-color: aqua;
+    /* width: 50px; */
+    order: 2;
+
+}
+#b4{
+    background-color: aqua;
+    border: 1px solid rebeccapurple;
+    /* width: 50px; */
+    order: 5;
+}

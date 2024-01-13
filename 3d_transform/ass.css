@@ -1,0 +1,33 @@
+.container{
+
+    height: 800px;
+    width: 100%;
+    display: flex;
+    background-color: hotpink;
+    justify-content: center;
+    align-items: center;
+}
+
+.hey{
+    border: 3px solid slateblue;
+    height: 50px;
+    width: 150px;
+}
+
+button{
+    font-size: 38px;
+    
+    background-color: red;
+    color: RED;
+    background: linear-gradient(to right, #000 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: bottom right;
+    transition: all 2s ease-out;
+}
+
+
+button:hover{
+    border: 2px solid limegreen;
+    background-position: bottom left;
+    color: #0a0808;   
+}

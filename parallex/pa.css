@@ -1,0 +1,102 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    height: 100%;
+}
+
+.back{
+    transform: translateZ(-40px) scale(6.27);
+}
+
+.fore{
+    transform: translateZ(-20px) scale(1);
+}
+.back,.fore{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1{
+    position: absolute;
+    top:2rem;
+    left:30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+    text-shadow: 0 0 4px rgb(158, 63, 131);
+}
+
+section{
+    background-color: rgb(45,45,45);
+    padding: 5rem 0;
+    color: whitesmoke;
+}
+
+.text{
+    
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+
+}
+
+.bc{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.bg1{
+    background-image: url(cycling.jpeg);
+}
+
+.bg2{
+    background-image: url(hikinh.jpeg);
+}
+
+.bg3{
+    background-image: url(sky.jpg);
+}
+
+.sch{
+    font-size:5rem;
+    padding:0 10rem;
+}
+
+.desc{
+    position: absolute;
+    top:50%;
+    left:40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    padding: 0.5rem 2.5rem;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}

@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com.css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+*{
+    padding: 0px;
+    margin: 0px;
+    /* box-sizing: border-box; */
+    font-family: "Be-Vietnam Pro",sans-serif;
+}
+
+:root{
+    --bgorange: #e84949;
+}
+.wrapper{
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* overflow-x: auto; */
+    height: 100vh;
+}
+
+.container{
+    width: 1200px;
+    /* width: fit-content; */
+
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    padding:0 4rem;
+}
+
+.logo-text{
+    /* margin-left: -1.2 rem; */
+    font-size: 60px;
+    color: rebeccapurple;
+    font-family:fantasy;
+}
+
+.nav-items div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-items div a{
+    color: black;
+}
+
+.nav-items div:hover{
+    font-weight: bold;
+    transition:0.8s;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto ;
+    gap: 5rem;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+
+}
+
+.faded-text{
+    position: absolute;
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231,231,231);
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+}
+
+.left-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2rem;
+
+}
+
+.heading{
+    font-size: 35px ;
+    color: #343d68;
+    font-weight: 500;
+}
+
+.role{
+    color: #4e45d5;
+    font-weight: 800;
+}
+.sub-heading{
+    font-size: 45px;
+
+    line-height: 45px;
+}
+.description{
+    margin: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+
+.blue-button{
+    position: relative;  
+    background-color: pink;
+    /* border: 1px solid black; */
+    padding: 0.8rem 2.4rem;
+    color: white;
+    font-size: 18px;
+     box-shadow: 5px 5px 5px #0000003f;
+     transition: all 0.5s;
+     font-weight: 500;
+     border: 3px solid transparent;
+     width: fit-content;
+    z-index: 1;   
+}
+
+.blue-button::before{
+    position: absolute;
+    content:"";
+    background-color: #010001;
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0px;
+    transform-origin: left;
+    transition: all 0.8s;
+    transform: scaleX(0);
+    z-index: -1;
+
+}
+
+.blue-button:hover::before{
+    transform: scaleX(1);
+}
+
+.right-part{
+    position: relative;
+} 
+
+
+
+.user-image{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition:all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+
+.user-image img{
+    z-index: -7;
+}
+
+@keyframes scaleImage {
+     
+    0%{
+
+        filter:grayscale(0);
+        transform: scale(1);
+    }
+
+    50%{
+        
+        transform: scale(1.1);
+        filter:grayscale(1);
+        box-shadow: 3px 3px 10px black;
+
+    }
+
+    100%{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+    
+}
+
+.dot-img{
+    position: absolute;
+    z-index: 8;
+    bottom: -1rem;
+    right:0;
+    animation-name: dotmove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes dotmove {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.icon-cube{
+
+    position: absolute;
+   z-index: 2;
+   top: 4.5%;
+   right: 1em;
+
+   animation: cuberoll 2s linear  infinite;
+
+
+}
+
+@keyframes cuberoll {
+    
+    0%{
+       transform: rotateY(0deg) translateY(0px); 
+    }
+
+    50%{
+        transform: rotateY(180deg) translateY(-12px);
+    }
+
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+    }
+}
+
+.icon-circle{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    animation: circlepos 4s linear infinite;
+    
+}
+
+@keyframes circlepos {
+
+    50%{
+
+        left: 5%;
+        bottom: 10%;
+
+
+    }
+}
+
+.icon-zigzag{
+    position: absolute;
+    z-index: 2;
+
+    top: 1.5em;
+    left: -0.3em;
+
+    animation: zigzagmov 1s ease ease-in infinite;
+}
+
+@keyframes zigzagmov {
+
+        50%{
+            top: 2%;
+            right: 5%;
+        }
+
+}
+
+.icon-plus{
+    z-index: 3;
+    position: absolute;
+    top: -0.8rem;
+    left: 50%;
+    animation: cross 3s linear infinite;
+
+}
+
+@keyframes cross {
+    
+    50%{
+        top: 3%;
+        left: 48%;
+    }
+}

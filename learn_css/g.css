@@ -1,0 +1,18 @@
+
+.box{
+    text-shadow: 5px 5px 5px hotpink, 20px 20px 2px blue;
+    margin-top: 50px;
+}
+
+.hey{
+    height: 200px;
+    width: 150px;
+    background-color: papayawhip;
+    /* border: 1px solid black; */
+    box-shadow: -5px -5px 5px aqua, 8px 8px 8px red ;
+    text-align: center;
+}
+
+.hey:hover{
+   box-shadow: 5px 5px 5px 10px blueviolet; 
+}
