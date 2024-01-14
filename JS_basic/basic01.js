@@ -1,4 +1,6 @@
 
-let money = 10
+// Return Type of datatypes:
 
-console.log(money);
+// 1-> null returns object
+// 2->undefined returns undefined
+// 3-> function returns funtion
