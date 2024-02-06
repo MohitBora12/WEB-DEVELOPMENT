@@ -31,9 +31,9 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 80vw;
+  max-width: 75vw;
   background-repeat: no-repeat;
-  height: 50px;
+  height: 80px;
   margin: auto;
 }
 
@@ -74,3 +74,59 @@ body{
     font-size: 20px;
 }
 
+.separator{
+  background-color: rgb(55, 55, 55);
+  height: 10px;
+}
+
+.lang-btn{
+  background-color: rgba(23, 23, 23, 0.9);
+  padding: 5px 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+.si-btn{
+  background-color: red;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.btn-pos{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gt-st{
+  background-color: red;
+  color: white;
+  padding: 12px 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.main input{
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 80px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: rgba(23,23, 23, 0.8);
+  
+  
+}
+.mail{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
